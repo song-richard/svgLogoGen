@@ -15,7 +15,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'color',
+        name: 'textColor',
         message: 'Please enter a text color:'
     },
     {
@@ -24,6 +24,11 @@ const questions = [
         message: 'Please enter a shape:',
         choices: shapeOptions,
     },
+    {
+        type: 'input',
+        name: 'shapeColor',
+        message: 'Enter shape color'
+    }
 ]
 
 const startGen = async () => {
