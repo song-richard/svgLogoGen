@@ -23,7 +23,7 @@ const questions = [
         type: 'list',
         name: 'shape',
         message: 'Please enter a shape:',
-        choices: shapeOptions,
+        choices: shapeOptions.map((shape) => shape.toLocaleLowerCase()),
     },
     {
         type: 'input',
