@@ -37,9 +37,9 @@ const startGen = async () => {
         const answers = await inquirer.prompt(questions);
         const { text, textColor, shape, shapeColor } = answers;
         const svgLogo = generateSVG(text, textColor, shape, shapeColor);
-        await fs.writeFile('logo.svg', svgLogo)
+        await fs.writeFile('logo.svg', svgLogo);
     } catch (error) {
-        console.error(error)
+        console.error('Error', error.message);
     }
 }
 
