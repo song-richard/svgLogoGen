@@ -8,7 +8,7 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testRegex": "(/tests/.*\\.test\\.[jt]sx?)$"
+    "testRegex": "(/.*\\.test\\.[jt]sx?)$"
   },
   "keywords": [],
   "author": "",
