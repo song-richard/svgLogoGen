@@ -9,7 +9,7 @@ const shapeOptions = ['Circle', 'Triangle', 'Square']
 const questions = [
     {
         type: 'input',
-        name: 'initialInput',
+        name: 'text',
         message: 'Please enter up to three characters:',
         validate: (input) => input.length <= 3,
     },
@@ -20,7 +20,7 @@ const questions = [
     },
     {
         type: 'list',
-        name: 'shapes',
+        name: 'shape',
         message: 'Please enter a shape:',
         choices: shapeOptions,
     },
@@ -34,6 +34,7 @@ const questions = [
 const startGen = async () => {
     try {
         const answers = await inquirer.prompt(questions);
+        const { text, textColor, shape, shapeColor } = answers
         console.log(answers)
     } catch (error) {
         console.error(error)
