@@ -1,11 +1,11 @@
 //WHEN I am prompted for text
 //THEN I can enter up to three characters
 
-const inquirer = require('inquirer')
-const fs = require('fs')
-const generateSVG = require('./lib/generateSVG')
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateSVG = require('./lib/generateSVG');
 
-const shapeOptions = ['Circle', 'Triangle', 'Square']
+const shapeOptions = ['Circle', 'Triangle', 'Square'];
 
 const questions = [
     {
