@@ -3,6 +3,7 @@
 
 const inquirer = require('inquirer')
 const fs = require('fs')
+const generateSVG = require('./lib/generateSVG')
 
 const shapeOptions = ['Circle', 'Triangle', 'Square']
 
