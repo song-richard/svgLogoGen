@@ -37,10 +37,12 @@ const startGen = async () => {
         const answers = await inquirer.prompt(questions);
         const { text, textColor, shape, shapeColor } = answers;
         const svgLogo = generateSVG(text, textColor, shape, shapeColor);
-        await fs.writeFile('logo.svg', svgLogo)
-    } catch (error) {
-        console.error(error)
-    }
+
+        fs.writeFileSync('logo.svg', svgLogo);
+        console.log('Generated logo.svg');
+      } catch (error) {
+        console.error('Error', error.message);
+      }
 }
 
 startGen()
