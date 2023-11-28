@@ -1,9 +1,7 @@
-//WHEN I am prompted for text
-//THEN I can enter up to three characters
-
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateSVG = require('./lib/generateSVG');
+const { Circle, Square, Triangle } = require('./lib/shapes')
 
 const shapeOptions = ['Circle', 'Triangle', 'Square'];
 
