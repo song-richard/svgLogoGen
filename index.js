@@ -10,7 +10,8 @@ const questions = [
     {
         type: 'input',
         name: 'initialInput',
-        message: 'Please enter up to three characters:'
+        message: 'Please enter up to three characters:',
+        validate: (input) => input.length <= 3,
     },
     {
         type: 'input',
