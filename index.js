@@ -5,6 +5,7 @@ const generateSVG = require('./lib/generateSVG');
 //Array of shape choices
 const shapeOptions = ['Circle', 'Triangle', 'Square'];
 
+//Object of questions that will be prompting the end-user
 const questions = [
     {
         type: 'input',
@@ -30,6 +31,7 @@ const questions = [
     }
 ]
 
+//Function to initiate inquirier, generate logo, and use fs to write the logo into file system
 const startGen = async () => {
     try {
         const answers = await inquirer.prompt(questions);
@@ -43,4 +45,5 @@ const startGen = async () => {
       }
 }
 
+//Calling startGen() to initiate function
 startGen()
