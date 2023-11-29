@@ -6,6 +6,9 @@ Generate logos with the following shapes: Circle, Square, and Triangle.
 ## Usage
 Node.js required on your machine
 
+![SVG DEMO GIF](./assets/ezgif-5-6a81901bce.gif)
+
+
 ## Installation
 Clone the following repository
 Navigate to the file's directory
