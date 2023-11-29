@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateSVG = require('./lib/generateSVG');
-const { Circle, Square, Triangle } = require('./lib/shapes')
 
+//Array of shape choices
 const shapeOptions = ['Circle', 'Triangle', 'Square'];
 
 const questions = [
